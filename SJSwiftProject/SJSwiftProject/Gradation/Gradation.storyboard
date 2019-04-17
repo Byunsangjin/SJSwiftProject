@@ -20,10 +20,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwM-fA-uax" customClass="GradationView" customModule="SJSwiftProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="357" width="375" height="310"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Y9D-et-ZbQ"/>
-                                    <constraint firstAttribute="height" constant="310" id="wRp-3k-qAZ"/>
-                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-B0-r2w">
                                 <rect key="frame" x="59" y="142" width="95" height="34"/>
@@ -236,9 +232,12 @@
                             <constraint firstItem="2y6-Ve-D8G" firstAttribute="top" secondItem="Bps-On-5hf" secondAttribute="top" constant="17" id="Ch2-EI-PC0"/>
                             <constraint firstItem="JvG-B0-r2w" firstAttribute="leading" secondItem="2y6-Ve-D8G" secondAttribute="leading" id="HTa-Ad-BBd"/>
                             <constraint firstItem="OwM-fA-uax" firstAttribute="top" secondItem="2y6-Ve-D8G" secondAttribute="bottom" constant="235" id="Jgb-ij-URr"/>
+                            <constraint firstItem="OwM-fA-uax" firstAttribute="bottom" secondItem="Bps-On-5hf" secondAttribute="bottom" id="Vq8-JU-hJb"/>
                             <constraint firstItem="gnU-pS-NZZ" firstAttribute="trailing" secondItem="2y6-Ve-D8G" secondAttribute="trailing" id="alu-DQ-qGe"/>
+                            <constraint firstItem="OwM-fA-uax" firstAttribute="leading" secondItem="Bps-On-5hf" secondAttribute="leading" id="cnC-jU-29g"/>
                             <constraint firstItem="gnU-pS-NZZ" firstAttribute="top" secondItem="2y6-Ve-D8G" secondAttribute="bottom" constant="20" id="tdP-pF-dOW"/>
                             <constraint firstItem="JvG-B0-r2w" firstAttribute="top" secondItem="2y6-Ve-D8G" secondAttribute="bottom" constant="20" id="xnv-JR-hF0"/>
+                            <constraint firstItem="OwM-fA-uax" firstAttribute="trailing" secondItem="Bps-On-5hf" secondAttribute="trailing" id="zAF-BC-nE4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bps-On-5hf"/>
                     </view>

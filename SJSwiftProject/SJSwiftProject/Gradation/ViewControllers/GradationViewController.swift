@@ -119,10 +119,10 @@ class GradationViewController: UIViewController {
         
         if sender.tag == 0 { // startColor
             let startColor = Color(rawValue: colorText)?.returnUIColor()
-            gradationView.startColor = startColor
+            gradationView.startColor = startColor!
         } else { // endColor
             let endColor = Color(rawValue: colorText)?.returnUIColor()
-            gradationView.endColor = endColor
+            gradationView.endColor = endColor!
         }
     }
 }
