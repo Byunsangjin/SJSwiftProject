@@ -15,8 +15,9 @@ class ViewController: UIViewController {
     
     
     // MARK:- Constants
-    let titleArray = ["Gradation"]
-    let viewControllerArray = ["GradationViewController"]
+    let titleArray = ["UIView Gradation", "UIButton LayerGradation/Border"]
+    let storyboardArray = ["Gradation", "ButtonLayer"]
+    let viewControllerArray = ["GradationViewController", "ButtonLayerViewController"]
     
     
     // MARK:- Methods
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboardName = titleArray[indexPath.row]
+        let storyboardName = storyboardArray[indexPath.row]
         let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
         
         let VCName = viewControllerArray[indexPath.row]
