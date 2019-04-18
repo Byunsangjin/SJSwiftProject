@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Field Layer View Controller-->
+        <scene sceneID="qcq-Og-q6A">
+            <objects>
+                <viewController storyboardIdentifier="TextFieldLayerViewController" id="h2X-tO-3FD" customClass="TextFieldLayerViewController" customModule="SJSwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2n-1P-pLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toW-xx-KPg" customClass="TextFieldLayer" customModule="SJSwiftProject" customModuleProvider="target">
+                                <rect key="frame" x="60.5" y="433" width="293" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="PIs-k3-csx"/>
+                                    <constraint firstAttribute="height" constant="30" id="pkM-mr-eOT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border Width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Xf-J8B">
+                                <rect key="frame" x="60.5" y="213.5" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAg-1V-fUo">
+                                <rect key="frame" x="237.5" y="209.5" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="6JR-pv-PfC"/>
+                                    <constraint firstAttribute="height" constant="29" id="KLJ-rC-IvW"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="widthSlide:" destination="h2X-tO-3FD" eventType="valueChanged" id="HH4-Px-cNq"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6G2-Xf-J8B" firstAttribute="leading" secondItem="toW-xx-KPg" secondAttribute="leading" id="EWO-7i-9Bg"/>
+                            <constraint firstItem="BAg-1V-fUo" firstAttribute="trailing" secondItem="toW-xx-KPg" secondAttribute="trailing" id="MsB-Ab-ebH"/>
+                            <constraint firstItem="toW-xx-KPg" firstAttribute="centerY" secondItem="a2n-1P-pLE" secondAttribute="centerY" id="TSt-FO-7JW"/>
+                            <constraint firstItem="toW-xx-KPg" firstAttribute="centerX" secondItem="a2n-1P-pLE" secondAttribute="centerX" id="XOT-q1-w7T"/>
+                            <constraint firstItem="6G2-Xf-J8B" firstAttribute="centerY" secondItem="a2n-1P-pLE" secondAttribute="centerY" multiplier="0.5" id="uyh-Ln-Xcl"/>
+                            <constraint firstItem="BAg-1V-fUo" firstAttribute="centerY" secondItem="6G2-Xf-J8B" secondAttribute="centerY" id="vnn-aF-fWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R6n-8g-uAg"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="toW-xx-KPg" id="71K-Sa-rK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmX-fE-G6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+</document>
