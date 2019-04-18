@@ -8,3 +8,11 @@
 
 - UIButton의 Layer를 수정한다.
 - Gradation의 Start Color와 End Color를 같게 하면 배경색상을 변경할 수 있다.
+
+## UITextField Layer Border
+
+- UITextField의 Layer르 수정한다.
+
+## todo
+- [ ] UITextField Layer Border : Slider 값 변경 시 TextField 적용 
+- [ ] Alert 구현
