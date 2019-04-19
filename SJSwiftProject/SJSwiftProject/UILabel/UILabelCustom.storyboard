@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Label View Controller-->
+        <scene sceneID="6cK-i7-9yq">
+            <objects>
+                <viewController storyboardIdentifier="CustomLabelViewController" id="SfL-NK-g3x" customClass="CustomLabelViewController" customModule="SJSwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NZr-Wy-iiC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1od-1u-7Gz" customClass="CustomLabel" customModule="SJSwiftProject" customModuleProvider="target">
+                                <rect key="frame" x="148.5" y="430" width="117.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" maximumValue="10" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nxD-sn-BiR">
+                                <rect key="frame" x="259" y="209.5" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperClick:" destination="SfL-NK-g3x" eventType="valueChanged" id="tfs-8y-TIc"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Space : 0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-Zc-gRb">
+                                <rect key="frame" x="29" y="212" width="190" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1od-1u-7Gz" firstAttribute="centerX" secondItem="NZr-Wy-iiC" secondAttribute="centerX" id="I69-nx-2lR"/>
+                            <constraint firstItem="nxD-sn-BiR" firstAttribute="centerY" secondItem="QAN-Zc-gRb" secondAttribute="centerY" id="Mik-2H-FtL"/>
+                            <constraint firstItem="1od-1u-7Gz" firstAttribute="centerY" secondItem="NZr-Wy-iiC" secondAttribute="centerY" id="OQg-nb-mVN"/>
+                            <constraint firstItem="QAN-Zc-gRb" firstAttribute="centerY" secondItem="NZr-Wy-iiC" secondAttribute="centerY" multiplier="0.5" id="dwe-gE-vJw"/>
+                            <constraint firstItem="nxD-sn-BiR" firstAttribute="leading" secondItem="QAN-Zc-gRb" secondAttribute="trailing" constant="40" id="iME-ni-Sjr"/>
+                            <constraint firstItem="QAN-Zc-gRb" firstAttribute="centerX" secondItem="NZr-Wy-iiC" secondAttribute="centerX" multiplier="0.6" id="oh0-gz-5Kw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aHG-db-Kgc"/>
+                    </view>
+                    <connections>
+                        <outlet property="testLabel" destination="1od-1u-7Gz" id="Zyn-Se-TsF"/>
+                        <outlet property="valueLabel" destination="QAN-Zc-gRb" id="7gH-no-9Kt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKu-NX-qM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="158"/>
+        </scene>
+    </scenes>
+</document>

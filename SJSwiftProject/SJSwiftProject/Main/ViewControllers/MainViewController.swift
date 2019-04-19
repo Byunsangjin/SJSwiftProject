@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     
     
     // MARK:- Constants
-    let titleArray = ["UIView Gradation", "UIButton LayerGradation/Border", "UITextField LayerBorder"]
-    let storyboardArray = ["Gradation", "ButtonLayer", "TextFieldLayer"]
-    let viewControllerArray = ["GradationViewController", "ButtonLayerViewController", "TextFieldLayerViewController"]
+    let titleArray = ["UIView Gradation", "UIButton LayerGradation/Border", "UITextField LayerBorder", "UILabel Custom"]
+    let storyboardArray = ["Gradation", "ButtonLayer", "TextFieldLayer", "UILabelCustom"]
+    let viewControllerArray = ["GradationViewController", "ButtonLayerViewController", "TextFieldLayerViewController", "CustomLabelViewController"]
     
     
     // MARK:- Methods

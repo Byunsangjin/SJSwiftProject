@@ -23,6 +23,9 @@
 		6098EC992268DAB50042EA96 /* TextFieldLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098EC982268DAB50042EA96 /* TextFieldLayerViewController.swift */; };
 		6098EC9B2268DAC40042EA96 /* UITextField+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098EC9A2268DAC40042EA96 /* UITextField+Layer.swift */; };
 		6098EC9D2268DD300042EA96 /* TextFieldLayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6098EC9C2268DD300042EA96 /* TextFieldLayer.storyboard */; };
+		6098ECA82269EEFB0042EA96 /* CustomLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098ECA72269EEFB0042EA96 /* CustomLabelViewController.swift */; };
+		6098ECAA2269EF0B0042EA96 /* UILabel+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098ECA92269EF0B0042EA96 /* UILabel+Custom.swift */; };
+		6098ECAC2269EF190042EA96 /* UILabelCustom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6098ECAB2269EF190042EA96 /* UILabelCustom.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		6098EC982268DAB50042EA96 /* TextFieldLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLayerViewController.swift; sourceTree = "<group>"; };
 		6098EC9A2268DAC40042EA96 /* UITextField+Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Layer.swift"; sourceTree = "<group>"; };
 		6098EC9C2268DD300042EA96 /* TextFieldLayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextFieldLayer.storyboard; sourceTree = "<group>"; };
+		6098ECA72269EEFB0042EA96 /* CustomLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelViewController.swift; sourceTree = "<group>"; };
+		6098ECA92269EF0B0042EA96 /* UILabel+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Custom.swift"; sourceTree = "<group>"; };
+		6098ECAB2269EF190042EA96 /* UILabelCustom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabelCustom.storyboard; sourceTree = "<group>"; };
 		AAB0CAAE60D71A23B9ABA5ED /* Pods-SJSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJSwiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJSwiftProject/Pods-SJSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CD30AD95D46D4D6FA0D43787 /* Pods_SJSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F72E0DF514139ABBCF206B /* Pods-SJSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJSwiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJSwiftProject/Pods-SJSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 				606A413122658903004B9329 /* Gradation */,
 				6098EC6B2268536F0042EA96 /* Button */,
 				6098EC952268DA210042EA96 /* TextField */,
+				6098ECA62269EEE30042EA96 /* UILabel */,
 				6084C5322265AAE20061D743 /* Enum */,
 				606A413B22658A16004B9329 /* Supporting */,
 			);
@@ -166,6 +173,16 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		6098ECA62269EEE30042EA96 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				6098ECA72269EEFB0042EA96 /* CustomLabelViewController.swift */,
+				6098ECA92269EF0B0042EA96 /* UILabel+Custom.swift */,
+				6098ECAB2269EF190042EA96 /* UILabelCustom.storyboard */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		D4522A7FD467D3B579DD8DC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				606A413722658988004B9329 /* Gradation.storyboard in Resources */,
+				6098ECAC2269EF190042EA96 /* UILabelCustom.storyboard in Resources */,
 				6098EC6F226853D40042EA96 /* ButtonLayer.storyboard in Resources */,
 				606A412822657631004B9329 /* LaunchScreen.storyboard in Resources */,
 				606A412522657631004B9329 /* Assets.xcassets in Resources */,
@@ -301,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6098ECA82269EEFB0042EA96 /* CustomLabelViewController.swift in Sources */,
 				606A412022657630004B9329 /* MainViewController.swift in Sources */,
 				6098EC71226854260042EA96 /* UIButton+Layer.swift in Sources */,
+				6098ECAA2269EF0B0042EA96 /* UILabel+Custom.swift in Sources */,
 				6098EC9B2268DAC40042EA96 /* UITextField+Layer.swift in Sources */,
 				6098EC992268DAB50042EA96 /* TextFieldLayerViewController.swift in Sources */,
 				606A413522658933004B9329 /* GradationViewController.swift in Sources */,
