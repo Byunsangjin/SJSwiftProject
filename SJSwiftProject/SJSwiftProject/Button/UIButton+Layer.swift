@@ -39,14 +39,14 @@ class ButtonLayer: UIButton {
         }
     }
     
-    @IBInspectable var endColor: UIColor = UIColor.clear {
+    @IBInspectable var startPoint: CGPoint = CGPoint(x: 0.5, y: 0) {
         didSet {
             updateGradient()
             updateBorder()
         }
     }
     
-    @IBInspectable var startPoint: CGPoint = CGPoint(x: 0.5, y: 0) {
+    @IBInspectable var endColor: UIColor = UIColor.clear {
         didSet {
             updateGradient()
             updateBorder()
@@ -57,6 +57,24 @@ class ButtonLayer: UIButton {
         didSet {
             updateGradient()
             updateBorder()
+        }
+    }
+    
+    @IBInspectable var shadowColor: UIColor? {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable var shadowOffset: CGSize = CGSize.zero {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable var shadowOpacity: Float = 0 {
+        didSet {
+            setNeedsLayout()
         }
     }
     
@@ -118,7 +136,10 @@ class ButtonLayer: UIButton {
             gradient.colors = [startColor.cgColor, endColor.cgColor]
             gradient.startPoint = CGPoint(x: startPoint.x, y: startPoint.y)
             gradient.endPoint = CGPoint(x: endPoint.x, y: endPoint.y)
-        }
+            
+            gradient.shadowColor = shadowColor?.cgColor
+            gradient.shadowOffset = shadowOffset
+            gradient.shadowOpacity = shadowOpacity        }
     }
     
     
