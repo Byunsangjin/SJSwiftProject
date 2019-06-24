@@ -11,7 +11,7 @@
 
 ## UITextField Layer Border
 
-- UITextField의 Layer르 수정한다.
+- UITextField의 Layer 수정한다.
 
 ## UILabel Custom
 
